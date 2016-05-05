@@ -291,6 +291,18 @@ namespace QLBH_3._5._16
             DangNhapHT formDT = new DangNhapHT();
             formDT.Show();
         }
+
+        private void txtTimKiem_BH_TextChanged(object sender, EventArgs e)
+        {
+            cn = new SqlConnection(connection);
+            sql = "select * from HANGHOA where TenHangHoa like N'%" + txtTimKiem_BH.Text.Trim() + "%'";
+            da = new SqlDataAdapter(sql, cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dgvLuoiDL_BH.DataSource = dt;
+            cn.Close();
+            cn.Dispose();
+        }
     }
 }
         #endregion

@@ -55,6 +55,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BaoCao01.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="DangNhapHT.cs">
       <SubType>Form</SubType>

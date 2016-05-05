@@ -70,6 +70,8 @@
             this.tpKhachHang = new System.Windows.Forms.TabPage();
             this.tpBaoCao = new System.Windows.Forms.TabPage();
             this.tpTimKiem = new System.Windows.Forms.TabPage();
+            this.txtTimKiem_BH = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tpHeThong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_LH)).BeginInit();
@@ -257,6 +259,8 @@
             // 
             // tpBanHang
             // 
+            this.tpBanHang.Controls.Add(this.label10);
+            this.tpBanHang.Controls.Add(this.txtTimKiem_BH);
             this.tpBanHang.Controls.Add(this.btnRefresh_BH);
             this.tpBanHang.Controls.Add(this.btnXoa_BH);
             this.tpBanHang.Controls.Add(this.btnCapNhat_BH);
@@ -512,6 +516,23 @@
             this.tpTimKiem.Text = "Tìm kiếm, tra cứu";
             this.tpTimKiem.UseVisualStyleBackColor = true;
             // 
+            // txtTimKiem_BH
+            // 
+            this.txtTimKiem_BH.Location = new System.Drawing.Point(447, 99);
+            this.txtTimKiem_BH.Name = "txtTimKiem_BH";
+            this.txtTimKiem_BH.Size = new System.Drawing.Size(158, 20);
+            this.txtTimKiem_BH.TabIndex = 13;
+            this.txtTimKiem_BH.TextChanged += new System.EventHandler(this.txtTimKiem_BH_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(447, 80);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(49, 13);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Tìm kiếm";
+            // 
             // frmHeThong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -578,6 +599,8 @@
         private System.Windows.Forms.Button btnThoat_LH;
         private System.Windows.Forms.Button btnRefresh_LH;
         private System.Windows.Forms.Button btnXoa_LH;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtTimKiem_BH;
     }
 }
 
