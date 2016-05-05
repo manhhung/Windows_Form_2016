@@ -8,3 +8,13 @@ E:\File c# - LTUD\QLBH_3.5.16\QLBH_3.5.16\bin\Debug\QLBH_3.5.16.exe
 E:\File c# - LTUD\QLBH_3.5.16\QLBH_3.5.16\bin\Debug\QLBH_3.5.16.pdb
 E:\File c# - LTUD\QLBH_3.5.16\QLBH_3.5.16\obj\Debug\QLBH_3.5.16.exe
 E:\File c# - LTUD\QLBH_3.5.16\QLBH_3.5.16\obj\Debug\QLBH_3.5.16.pdb
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\bin\Debug\QLBH_3.5.16.exe.config
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\obj\Debug\QLBH_3.5.16.exe
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\obj\Debug\QLBH_3.5.16.pdb
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\obj\Debug\QLBH_3.5.16.csprojResolveAssemblyReference.cache
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\obj\Debug\QLBH_3._5._16.DangNhapHT.resources
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\obj\Debug\QLBH_3._5._16.frmHeThong.resources
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\obj\Debug\QLBH_3._5._16.Properties.Resources.resources
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\obj\Debug\QLBH_3.5.16.csproj.GenerateResource.Cache
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\bin\Debug\QLBH_3.5.16.exe
+E:\GITHUB\Windows_Form_2016\QLBH_3.5.16\bin\Debug\QLBH_3.5.16.pdb

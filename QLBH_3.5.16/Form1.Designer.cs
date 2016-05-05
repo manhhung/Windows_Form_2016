@@ -59,11 +59,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtMaHang_BH = new System.Windows.Forms.TextBox();
+            this.txtMaHangHoa_BH = new System.Windows.Forms.TextBox();
             this.txtDonViTinh_BH = new System.Windows.Forms.TextBox();
             this.txtDonGia_BH = new System.Windows.Forms.TextBox();
             this.txtSoLuong_BH = new System.Windows.Forms.TextBox();
-            this.txtTenHang_BH = new System.Windows.Forms.TextBox();
+            this.txtTenHangHoa_BH = new System.Windows.Forms.TextBox();
             this.dgvLuoiDL_BH = new System.Windows.Forms.DataGridView();
             this.tpKho = new System.Windows.Forms.TabPage();
             this.tpNhanSu = new System.Windows.Forms.TabPage();
@@ -270,11 +270,11 @@
             this.tpBanHang.Controls.Add(this.label2);
             this.tpBanHang.Controls.Add(this.label4);
             this.tpBanHang.Controls.Add(this.label1);
-            this.tpBanHang.Controls.Add(this.txtMaHang_BH);
+            this.tpBanHang.Controls.Add(this.txtMaHangHoa_BH);
             this.tpBanHang.Controls.Add(this.txtDonViTinh_BH);
             this.tpBanHang.Controls.Add(this.txtDonGia_BH);
             this.tpBanHang.Controls.Add(this.txtSoLuong_BH);
-            this.tpBanHang.Controls.Add(this.txtTenHang_BH);
+            this.tpBanHang.Controls.Add(this.txtTenHangHoa_BH);
             this.tpBanHang.Controls.Add(this.dgvLuoiDL_BH);
             this.tpBanHang.Location = new System.Drawing.Point(4, 22);
             this.tpBanHang.Name = "tpBanHang";
@@ -293,6 +293,7 @@
             this.btnRefresh_BH.TabIndex = 10;
             this.btnRefresh_BH.Text = "Refresh";
             this.btnRefresh_BH.UseVisualStyleBackColor = true;
+            this.btnRefresh_BH.Click += new System.EventHandler(this.btnRefresh_BH_Click);
             // 
             // btnXoa_BH
             // 
@@ -303,6 +304,7 @@
             this.btnXoa_BH.TabIndex = 9;
             this.btnXoa_BH.Text = "Xóa";
             this.btnXoa_BH.UseVisualStyleBackColor = true;
+            this.btnXoa_BH.Click += new System.EventHandler(this.btnXoa_BH_Click);
             // 
             // btnCapNhat_BH
             // 
@@ -313,6 +315,7 @@
             this.btnCapNhat_BH.TabIndex = 8;
             this.btnCapNhat_BH.Text = "Cập nhật";
             this.btnCapNhat_BH.UseVisualStyleBackColor = true;
+            this.btnCapNhat_BH.Click += new System.EventHandler(this.btnCapNhat_BH_Click);
             // 
             // btnHienThi_BH
             // 
@@ -323,6 +326,7 @@
             this.btnHienThi_BH.TabIndex = 7;
             this.btnHienThi_BH.Text = "Hiện thị";
             this.btnHienThi_BH.UseVisualStyleBackColor = true;
+            this.btnHienThi_BH.Click += new System.EventHandler(this.btnHienThi_BH_Click);
             // 
             // btnThoat_BH
             // 
@@ -333,6 +337,7 @@
             this.btnThoat_BH.TabIndex = 11;
             this.btnThoat_BH.Text = "Thoát";
             this.btnThoat_BH.UseVisualStyleBackColor = true;
+            this.btnThoat_BH.Click += new System.EventHandler(this.btnThoat_BH_Click);
             // 
             // btnLuu_BH
             // 
@@ -417,12 +422,12 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Loại hàng";
             // 
-            // txtMaHang_BH
+            // txtMaHangHoa_BH
             // 
-            this.txtMaHang_BH.Location = new System.Drawing.Point(119, 28);
-            this.txtMaHang_BH.Name = "txtMaHang_BH";
-            this.txtMaHang_BH.Size = new System.Drawing.Size(158, 20);
-            this.txtMaHang_BH.TabIndex = 0;
+            this.txtMaHangHoa_BH.Location = new System.Drawing.Point(119, 28);
+            this.txtMaHangHoa_BH.Name = "txtMaHangHoa_BH";
+            this.txtMaHangHoa_BH.Size = new System.Drawing.Size(158, 20);
+            this.txtMaHangHoa_BH.TabIndex = 0;
             // 
             // txtDonViTinh_BH
             // 
@@ -445,12 +450,12 @@
             this.txtSoLuong_BH.Size = new System.Drawing.Size(158, 20);
             this.txtSoLuong_BH.TabIndex = 3;
             // 
-            // txtTenHang_BH
+            // txtTenHangHoa_BH
             // 
-            this.txtTenHang_BH.Location = new System.Drawing.Point(119, 81);
-            this.txtTenHang_BH.Name = "txtTenHang_BH";
-            this.txtTenHang_BH.Size = new System.Drawing.Size(158, 20);
-            this.txtTenHang_BH.TabIndex = 2;
+            this.txtTenHangHoa_BH.Location = new System.Drawing.Point(119, 81);
+            this.txtTenHangHoa_BH.Name = "txtTenHangHoa_BH";
+            this.txtTenHangHoa_BH.Size = new System.Drawing.Size(158, 20);
+            this.txtTenHangHoa_BH.TabIndex = 2;
             // 
             // dgvLuoiDL_BH
             // 
@@ -460,12 +465,13 @@
             this.dgvLuoiDL_BH.Name = "dgvLuoiDL_BH";
             this.dgvLuoiDL_BH.Size = new System.Drawing.Size(668, 150);
             this.dgvLuoiDL_BH.TabIndex = 0;
+            this.dgvLuoiDL_BH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLuoiDL_BH_CellContentClick);
             // 
             // tpKho
             // 
             this.tpKho.Location = new System.Drawing.Point(4, 22);
             this.tpKho.Name = "tpKho";
-            this.tpKho.Size = new System.Drawing.Size(500, 369);
+            this.tpKho.Size = new System.Drawing.Size(674, 369);
             this.tpKho.TabIndex = 2;
             this.tpKho.Text = "Kho";
             this.tpKho.UseVisualStyleBackColor = true;
@@ -474,7 +480,7 @@
             // 
             this.tpNhanSu.Location = new System.Drawing.Point(4, 22);
             this.tpNhanSu.Name = "tpNhanSu";
-            this.tpNhanSu.Size = new System.Drawing.Size(500, 369);
+            this.tpNhanSu.Size = new System.Drawing.Size(674, 369);
             this.tpNhanSu.TabIndex = 3;
             this.tpNhanSu.Text = "Nhân Sự";
             this.tpNhanSu.UseVisualStyleBackColor = true;
@@ -483,7 +489,7 @@
             // 
             this.tpKhachHang.Location = new System.Drawing.Point(4, 22);
             this.tpKhachHang.Name = "tpKhachHang";
-            this.tpKhachHang.Size = new System.Drawing.Size(500, 369);
+            this.tpKhachHang.Size = new System.Drawing.Size(674, 369);
             this.tpKhachHang.TabIndex = 4;
             this.tpKhachHang.Text = "Khách hàng";
             this.tpKhachHang.UseVisualStyleBackColor = true;
@@ -492,7 +498,7 @@
             // 
             this.tpBaoCao.Location = new System.Drawing.Point(4, 22);
             this.tpBaoCao.Name = "tpBaoCao";
-            this.tpBaoCao.Size = new System.Drawing.Size(500, 369);
+            this.tpBaoCao.Size = new System.Drawing.Size(674, 369);
             this.tpBaoCao.TabIndex = 5;
             this.tpBaoCao.Text = "Báo cáo, thống kê";
             this.tpBaoCao.UseVisualStyleBackColor = true;
@@ -501,7 +507,7 @@
             // 
             this.tpTimKiem.Location = new System.Drawing.Point(4, 22);
             this.tpTimKiem.Name = "tpTimKiem";
-            this.tpTimKiem.Size = new System.Drawing.Size(500, 369);
+            this.tpTimKiem.Size = new System.Drawing.Size(674, 369);
             this.tpTimKiem.TabIndex = 6;
             this.tpTimKiem.Text = "Tìm kiếm, tra cứu";
             this.tpTimKiem.UseVisualStyleBackColor = true;
@@ -542,9 +548,9 @@
         private System.Windows.Forms.Button btnThoatHeThong;
         private System.Windows.Forms.ComboBox cboLoaiHang_BH;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtMaHang_BH;
+        private System.Windows.Forms.TextBox txtMaHangHoa_BH;
         private System.Windows.Forms.TextBox txtSoLuong_BH;
-        private System.Windows.Forms.TextBox txtTenHang_BH;
+        private System.Windows.Forms.TextBox txtTenHangHoa_BH;
         private System.Windows.Forms.DataGridView dgvLuoiDL_BH;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

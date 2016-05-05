@@ -26,6 +26,7 @@ namespace QLBH_3._5._16
         int dem;
         int k;
         string MaLoaiHangCapNhat;
+        string MaHangHoaCapNhat;
 
         private void btnThoatHeThong_Click(object sender, EventArgs e)
         {
@@ -159,9 +160,16 @@ namespace QLBH_3._5._16
             txtMoTa_LH.Clear();
         }
 
+        private void HideFormHT()
+        {
+            frmHeThong frm1 = new frmHeThong();
+            frm1.Hide();
+        }
         private void btnThoat_LH_Click(object sender, EventArgs e)
         {
-            this.Close();
+                      
+            DangNhapHT formDT = new DangNhapHT();
+            formDT.Show();
         }
         
         #region BAN HANG
@@ -173,18 +181,26 @@ namespace QLBH_3._5._16
             da = new SqlDataAdapter(sql, cn);
             DataTable dt = new DataTable();
             da.Fill(dt);
+            //if (dt.Rows.Count > 0)
+            //{
+            //    cboLoaiHang_BH.DataSource = dt;
+            //    //cboLoaiHang_BH.DataSource = dt;
+            //    cboLoaiHang_BH.ValueMember = "MaLoaiHang";
+            //    cboLoaiHang_BH.DisplayMember = "TenLoaiHang";
+            //    cboLoaiHang_BH.SelectedIndex = 0;
+            //}
             dgvLuoiDL_BH.DataSource = dt;
             cn.Close();
             cn.Dispose();
-            HienThiHangHoa();
+            //HienThiHangHoa();
         }
 
         private void btnLuu_BH_Click(object sender, EventArgs e)
         {
             cn = new SqlConnection(connection);
-            sql = "INSERT into HANGHOA values (N'" + txtMaHang_BH.Text.ToString() + "',N'" + cboLoaiHang_BH.SelectedValue.ToString() + "',N'"
-                 + txtTenHang_BH.Text.ToString() + "',N'" + txtSoLuong_BH.Text.ToString() + "',N'" + txtDonGia_BH.Text.ToString() + "',N'"
-                 + txtDonViTinh_BH.Text.ToString() + "',N'" +null+"')";
+            sql = "INSERT into HANGHOA values (N'" + txtMaHangHoa_BH.Text.ToString() + "',N'" + cboLoaiHang_BH.SelectedValue.ToString() + "',N'"
+                 + txtTenHangHoa_BH.Text.ToString() + "',N'" + txtSoLuong_BH.Text.ToString() + "',N'" + txtDonGia_BH.Text.ToString() + "',N'"
+                 + txtDonViTinh_BH.Text.ToString() + "')";
             SqlCommand cmd = new SqlCommand(sql, cn);
             cn.Open();
             cmd.ExecuteNonQuery();
@@ -206,6 +222,77 @@ namespace QLBH_3._5._16
             cn.Dispose();
         }
 
+        private void btnHienThi_BH_Click(object sender, EventArgs e)
+        {
+            HienThiHangHoa();
+        }
+
+        private void dgvLuoiDL_BH_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i = e.RowIndex; // i là số thứ tự của dòng
+            MaHangHoaCapNhat = dgvLuoiDL_BH[0, i].Value.ToString();
+            txtMaHangHoa_BH.Text = dgvLuoiDL_BH[0, i].Value.ToString();
+            txtMaHangHoa_BH.Enabled = false;
+            txtTenHangHoa_BH.Text = dgvLuoiDL_BH[2, i].Value.ToString();
+            txtSoLuong_BH.Text = dgvLuoiDL_BH[3, i].Value.ToString();
+            txtDonGia_BH.Text = dgvLuoiDL_BH[4, i].Value.ToString();
+            txtDonViTinh_BH.Text = dgvLuoiDL_BH[5, i].Value.ToString();
+
+        }
+
+        private void btnCapNhat_BH_Click(object sender, EventArgs e)
+        {
+            cn = new SqlConnection(connection);
+            sql = "UPDATE HANGHOA set TenHangHoa = N'" + txtTenHangHoa_BH.Text.ToString() + "',SoLuong = N'" + txtSoLuong_BH.Text.ToString() + "',DonGia = N'" + txtDonGia_BH.Text.ToString() + "',DonViTinh = N'" + txtDonViTinh_BH.Text.ToString()
+                + "'where MaHangHoa = N'" + MaHangHoaCapNhat.ToString() + "'"; 
+            SqlCommand cmd = new SqlCommand(sql, cn);
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            cn.Close();
+            cn.Dispose();
+            HienThiHangHoa();
+        }
+
+        private void btnXoa_BH_Click(object sender, EventArgs e)
+        {
+            DialogResult chon = MessageBox.Show("Bạn có thực sự muốn xóa?", "Chú ý", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (chon == DialogResult.Yes)
+            {
+                try
+                {
+                    cn = new SqlConnection(connection);
+                    sql = "DELETE from HANGHOA where MaHangHoa=N'" + MaHangHoaCapNhat.ToString() + "'";
+                    SqlCommand cmd = new SqlCommand(sql, cn);
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                    cn.Close();
+                    cn.Dispose();
+                    HienThiHangHoa();
+
+                }
+                catch
+                {
+                    MessageBox.Show("Có lỗi trong quá trình xử lý!", "Chú ý!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else return;
+        }
+
+        private void btnRefresh_BH_Click(object sender, EventArgs e)
+        {
+            txtMaHangHoa_BH.Clear();
+            txtMaHangHoa_BH.Enabled = true;
+            txtTenHangHoa_BH.Clear();
+            txtMaHangHoa_BH.Clear();
+            txtSoLuong_BH.Clear();
+            txtDonGia_BH.Clear();
+            txtDonViTinh_BH.Clear();
+        }
+
+        private void btnThoat_BH_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
         #endregion

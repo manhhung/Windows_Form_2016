@@ -51,6 +51,7 @@ namespace QLBH_3._5._16
                    {
                        frmHeThong frm = new frmHeThong();
                        frm.Show();
+                       
                        //this.Close();
                        Program.quyen = int.Parse(ds.Tables[0].Rows[0][2].ToString());
                        Program.taikhoan = ds.Tables[0].Rows[0].ToString();
