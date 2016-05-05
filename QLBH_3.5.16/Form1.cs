@@ -160,14 +160,10 @@ namespace QLBH_3._5._16
             txtMoTa_LH.Clear();
         }
 
-        private void HideFormHT()
-        {
-            frmHeThong frm1 = new frmHeThong();
-            frm1.Hide();
-        }
+       
         private void btnThoat_LH_Click(object sender, EventArgs e)
         {
-                      
+            this.Hide();
             DangNhapHT formDT = new DangNhapHT();
             formDT.Show();
         }
@@ -291,7 +287,9 @@ namespace QLBH_3._5._16
 
         private void btnThoat_BH_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            DangNhapHT formDT = new DangNhapHT();
+            formDT.Show();
         }
     }
 }
