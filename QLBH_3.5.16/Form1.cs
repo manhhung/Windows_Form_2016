@@ -110,6 +110,7 @@ namespace QLBH_3._5._16
             txtMaLoaiHang_LH.Enabled = false;
             txtTenLoaiHang_LH.Text = dgvLuoiDL_LH[1, i].Value.ToString();
             txtMoTa_LH.Text = dgvLuoiDL_LH[2, i].Value.ToString();
+            btnCapNhat_BH.Enabled = true;
         }
 
         private void btnCapNhat_LH_Click(object sender, EventArgs e)
@@ -123,6 +124,7 @@ namespace QLBH_3._5._16
             cn.Close();
             cn.Dispose();
             HienThiLoaiHang();
+            btnCapNhat_BH.Enabled = false;
 
         }
 
@@ -303,6 +305,57 @@ namespace QLBH_3._5._16
             cn.Close();
             cn.Dispose();
         }
+
+        private void btnChonTep_NV_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openfileDlg1 = new OpenFileDialog();
+            openfileDlg1.Filter = openfileDlg1.Filter = "JPG file (*.jpg)|*.jpg|All files (*.*)|*.*";
+            openfileDlg1.FilterIndex = 1;
+            openfileDlg1.RestoreDirectory = true;
+            if (openfileDlg1.ShowDialog () == DialogResult.OK)
+            {
+                pictureBox1.ImageLocation = openfileDlg1.FileName;
+                txtDuongDanAnh_NV.Text = openfileDlg1.FileName;
+            }
+        }
+
+        private void label27_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label36_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void btnXacNhan_NV_Click(object sender, EventArgs e)
+        //{
+        //    try
+        //    {
+        //        cn = new SqlConnection(connection);
+        //        sql = "insert into NHANVIEN values (@ANHNV)
+        //        SqlCommand cmd = new SqlCommand(sql, cn);
+        //        cn.Open();
+        //        cmd.ExecuteNonQuery();
+        //        cn.Close();
+        //        cn.Dispose();
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //}
     }
 }
         #endregion
