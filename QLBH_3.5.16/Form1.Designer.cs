@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHeThong));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tpHeThong = new System.Windows.Forms.TabPage();
+            this.tpQLBH = new System.Windows.Forms.TabControl();
+            this.tpLoaiHang = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtMoTa_LH = new System.Windows.Forms.TextBox();
             this.txtMaLoaiHang_LH = new System.Windows.Forms.TextBox();
@@ -168,8 +168,25 @@
             this.label19 = new System.Windows.Forms.Label();
             this.txtMaKhachHang_TK = new System.Windows.Forms.TextBox();
             this.cboLoaiSanPham_TK = new System.Windows.Forms.ComboBox();
-            this.tabControl1.SuspendLayout();
-            this.tpHeThong.SuspendLayout();
+            this.tpHeThong = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tpQLBH.SuspendLayout();
+            this.tpLoaiHang.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_LH)).BeginInit();
@@ -192,30 +209,37 @@
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.tpHeThong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tpQLBH
             // 
-            this.tabControl1.Controls.Add(this.tpHeThong);
-            this.tabControl1.Controls.Add(this.tpBanHang);
-            this.tabControl1.Controls.Add(this.tpKho);
-            this.tabControl1.Controls.Add(this.tpNhanSu);
-            this.tabControl1.Controls.Add(this.tpKhachHang);
-            this.tabControl1.Controls.Add(this.tpBaoCao);
-            this.tabControl1.Controls.Add(this.tpTimKiem);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
+            this.tpQLBH.Controls.Add(this.tpHeThong);
+            this.tpQLBH.Controls.Add(this.tpLoaiHang);
+            this.tpQLBH.Controls.Add(this.tpBanHang);
+            this.tpQLBH.Controls.Add(this.tpKho);
+            this.tpQLBH.Controls.Add(this.tpNhanSu);
+            this.tpQLBH.Controls.Add(this.tpKhachHang);
+            this.tpQLBH.Controls.Add(this.tpBaoCao);
+            this.tpQLBH.Controls.Add(this.tpTimKiem);
+            resources.ApplyResources(this.tpQLBH, "tpQLBH");
+            this.tpQLBH.Name = "tpQLBH";
+            this.tpQLBH.SelectedIndex = 0;
             // 
-            // tpHeThong
+            // tpLoaiHang
             // 
-            this.tpHeThong.Controls.Add(this.groupBox2);
-            this.tpHeThong.Controls.Add(this.groupBox1);
-            this.tpHeThong.Controls.Add(this.dgvLuoiDL_LH);
-            this.tpHeThong.Controls.Add(this.btnThoatHeThong);
-            resources.ApplyResources(this.tpHeThong, "tpHeThong");
-            this.tpHeThong.Name = "tpHeThong";
-            this.tpHeThong.UseVisualStyleBackColor = true;
+            this.tpLoaiHang.Controls.Add(this.groupBox2);
+            this.tpLoaiHang.Controls.Add(this.groupBox1);
+            this.tpLoaiHang.Controls.Add(this.dgvLuoiDL_LH);
+            this.tpLoaiHang.Controls.Add(this.btnThoatHeThong);
+            resources.ApplyResources(this.tpLoaiHang, "tpLoaiHang");
+            this.tpLoaiHang.Name = "tpLoaiHang";
+            this.tpLoaiHang.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -1130,15 +1154,129 @@
             resources.ApplyResources(this.cboLoaiSanPham_TK, "cboLoaiSanPham_TK");
             this.cboLoaiSanPham_TK.Name = "cboLoaiSanPham_TK";
             // 
+            // tpHeThong
+            // 
+            this.tpHeThong.Controls.Add(this.groupBox13);
+            this.tpHeThong.Controls.Add(this.groupBox12);
+            this.tpHeThong.Controls.Add(this.groupBox11);
+            this.tpHeThong.Controls.Add(this.groupBox10);
+            resources.ApplyResources(this.tpHeThong, "tpHeThong");
+            this.tpHeThong.Name = "tpHeThong";
+            this.tpHeThong.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // label45
+            // 
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.Name = "label45";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.textBox3);
+            this.groupBox10.Controls.Add(this.textBox1);
+            this.groupBox10.Controls.Add(this.textBox2);
+            this.groupBox10.Controls.Add(this.label42);
+            this.groupBox10.Controls.Add(this.label44);
+            this.groupBox10.Controls.Add(this.label45);
+            resources.ApplyResources(this.groupBox10, "groupBox10");
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.TabStop = false;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.groupBox11, "groupBox11");
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.TabStop = false;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.button4);
+            this.groupBox12.Controls.Add(this.button1);
+            this.groupBox12.Controls.Add(this.button2);
+            this.groupBox12.Controls.Add(this.button3);
+            resources.ApplyResources(this.groupBox12, "groupBox12");
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.TabStop = false;
+            // 
+            // groupBox13
+            // 
+            resources.ApplyResources(this.groupBox13, "groupBox13");
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::QLBH_3._5._16.Properties.Resources.e1b81d3f5c5f1;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
             // frmHeThong
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.tpQLBH);
             this.Name = "frmHeThong";
             this.Load += new System.EventHandler(this.frmHeThong_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tpHeThong.ResumeLayout(false);
+            this.tpQLBH.ResumeLayout(false);
+            this.tpLoaiHang.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1171,14 +1309,21 @@
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.tpHeThong.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tpHeThong;
+        private System.Windows.Forms.TabControl tpQLBH;
+        private System.Windows.Forms.TabPage tpLoaiHang;
         private System.Windows.Forms.TabPage tpBanHang;
         private System.Windows.Forms.TabPage tpKho;
         private System.Windows.Forms.TabPage tpNhanSu;
@@ -1316,6 +1461,23 @@
         private System.Windows.Forms.Button btnCapNhatThongTin_KHO;
         private System.Windows.Forms.DataGridView dgvLuoiDL_KHO;
         private System.Windows.Forms.ComboBox cboLoaiSanPham_TK;
+        private System.Windows.Forms.TabPage tpHeThong;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

@@ -340,6 +340,11 @@ namespace QLBH_3._5._16
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //private void btnXacNhan_NV_Click(object sender, EventArgs e)
         //{
         //    try
