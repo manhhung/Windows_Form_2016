@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BussinessLogicLayer;
 
 namespace QLBH_3._5._16
 {
@@ -314,7 +315,7 @@ namespace QLBH_3._5._16
             openfileDlg1.RestoreDirectory = true;
             if (openfileDlg1.ShowDialog () == DialogResult.OK)
             {
-                pictureBox1.ImageLocation = openfileDlg1.FileName;
+                picAnhNV_NV.ImageLocation = openfileDlg1.FileName;
                 txtDuongDanAnh_NV.Text = openfileDlg1.FileName;
             }
         }
@@ -356,6 +357,41 @@ namespace QLBH_3._5._16
         //        MessageBox.Show(ex.Message);
         //    }
         //}
+
+        //LoaiHang_BLL LHbll = new LoaiHang_BLL();
+        
+        //private void btnHienThi_LH_Click(object sender, EventArgs e)
+        //{
+        //    dgvLuoiDL_LH.DataSource = LHbll.LOAIHANG_Select();
+        //}
+
+        //private void btnLuu_LH_Click(object sender, EventArgs e)
+        //{
+        //    LHbll.LOAIHANG_Insert(txtMaLoaiHang_LH.Text, txtTenLoaiHang_LH.Text, txtMoTa_LH.Text);
+        //    //gọi lại hàm hiển thị để xem kết quả sau khi Thêm Sinh Viên
+        //    btnHienThi_LH_Click(sender, e);
+        //}
+
+        //private void btnCapNhat_LH_Click(object sender, EventArgs e)
+        //{
+        //    LHbll.LOAIHANG_Update(txtMaLoaiHang_LH.Text, txtTenLoaiHang_LH.Text, txtMoTa_LH.Text);
+        //    btnHienThi_LH_Click(sender, e);
+        //}
+
+        //private void btnXoa_LH_Click(object sender, EventArgs e)
+        //{
+        //    LHbll.LOAIHANG_Delete(txtMaLoaiHang_LH.Text);
+        //    btnHienThi_LH_Click(sender, e);
+        //}
+        //string idsv;
+        //private void dgvLuoiDL_LH(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    txtMaLoaiHang_LH.Text = dgvLuoiDL_LH.Rows[e.RowIndex].Cells[0].Value.ToString();
+        //    txtTenLoaiHang_LH.Text = dgvLuoiDL_LH.Rows[e.RowIndex].Cells[1].Value.ToString();
+        //    txtMoTa.Text = dgvLuoiDL_LH.Rows[e.RowIndex].Cells[2].Value.ToString();
+            
+        //}
+
     }
 }
         #endregion

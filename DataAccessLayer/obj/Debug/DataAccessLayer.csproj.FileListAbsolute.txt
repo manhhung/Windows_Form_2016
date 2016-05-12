@@ -1,0 +1,5 @@
+E:\GITHUB\Windows_Form_2016\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+E:\GITHUB\Windows_Form_2016\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+E:\GITHUB\Windows_Form_2016\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+E:\GITHUB\Windows_Form_2016\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+E:\GITHUB\Windows_Form_2016\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

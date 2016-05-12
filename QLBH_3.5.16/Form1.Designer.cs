@@ -72,8 +72,29 @@
             this.label6 = new System.Windows.Forms.Label();
             this.dgvLuoiDL_BH = new System.Windows.Forms.DataGridView();
             this.tpKho = new System.Windows.Forms.TabPage();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.txtDonViTinh_KHO = new System.Windows.Forms.TextBox();
+            this.cboLoaiHang_KHO = new System.Windows.Forms.ComboBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.txtGiaBan_KHO = new System.Windows.Forms.TextBox();
+            this.txtGiaMua_KHO = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.txtSoLuong_KHO = new System.Windows.Forms.TextBox();
+            this.txtTenHang_KHO = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txtMaHang_KHO = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.cboNhaCungCap_KHO = new System.Windows.Forms.ComboBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.btnRefresh_KHO = new System.Windows.Forms.Button();
+            this.btnCapNhatHinhAnh_KHO = new System.Windows.Forms.Button();
+            this.btnCapNhatThongTin_KHO = new System.Windows.Forms.Button();
+            this.dgvLuoiDL_KHO = new System.Windows.Forms.DataGridView();
             this.tpNhanSu = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picAnhNV_NV = new System.Windows.Forms.PictureBox();
             this.txtNgaySinh_NV = new System.Windows.Forms.TextBox();
             this.txtGioiTinh_NV = new System.Windows.Forms.TextBox();
             this.txtChucVu_NV = new System.Windows.Forms.TextBox();
@@ -99,75 +120,54 @@
             this.btnThemNhanVien_NV = new System.Windows.Forms.Button();
             this.dgvLuoiDL_NS = new System.Windows.Forms.DataGridView();
             this.tpKhachHang = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.txtDiaChi_KH = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtNgaySinh_KH = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtGioiTinh_KH = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtDienThoai_KH = new System.Windows.Forms.TextBox();
+            this.txtMaKhachHang_KH = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.txtTenKhachHang_KH = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.dgvLuoiDL_KH = new System.Windows.Forms.DataGridView();
+            this.btnThemKhachHang_KH = new System.Windows.Forms.Button();
+            this.btnXoaKhachHang_KH = new System.Windows.Forms.Button();
             this.tpBaoCao = new System.Windows.Forms.TabPage();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.BaoCao011 = new QLBH_3._5._16.BaoCao01();
             this.tpTimKiem = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnThemKhachHang_KH = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.dgvLuoiDL_TK = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.btnTimKiemDH_TK = new System.Windows.Forms.Button();
+            this.btnRefreshDH_TK = new System.Windows.Forms.Button();
+            this.txtNgayBan_TK = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.txtMaDonHang_TK = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.btnTimKiemNV_TK = new System.Windows.Forms.Button();
+            this.btnRefreshNV_TK = new System.Windows.Forms.Button();
+            this.txtSoDienThoaiNV_TK = new System.Windows.Forms.TextBox();
+            this.txtTenNhanVien_TK = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.txtMaNhanVien_TK = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnTimKiemKH_TK = new System.Windows.Forms.Button();
+            this.btnRefreshKH_TK = new System.Windows.Forms.Button();
+            this.txtSoDienThoaiKH_TK = new System.Windows.Forms.TextBox();
+            this.txtTenKhachHang_TK = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtMaKhachHang_TK = new System.Windows.Forms.TextBox();
+            this.cboLoaiSanPham_TK = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tpHeThong.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -178,20 +178,20 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_BH)).BeginInit();
             this.tpKho.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_KHO)).BeginInit();
             this.tpNhanSu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhNV_NV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_NS)).BeginInit();
             this.tpKhachHang.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_KH)).BeginInit();
             this.tpBaoCao.SuspendLayout();
             this.tpTimKiem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_TK)).BeginInit();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.groupBox9.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -499,17 +499,158 @@
             // tpKho
             // 
             this.tpKho.Controls.Add(this.groupBox9);
-            this.tpKho.Controls.Add(this.button10);
-            this.tpKho.Controls.Add(this.button9);
-            this.tpKho.Controls.Add(this.button8);
-            this.tpKho.Controls.Add(this.dataGridView3);
+            this.tpKho.Controls.Add(this.btnRefresh_KHO);
+            this.tpKho.Controls.Add(this.btnCapNhatHinhAnh_KHO);
+            this.tpKho.Controls.Add(this.btnCapNhatThongTin_KHO);
+            this.tpKho.Controls.Add(this.dgvLuoiDL_KHO);
             resources.ApplyResources(this.tpKho, "tpKho");
             this.tpKho.Name = "tpKho";
             this.tpKho.UseVisualStyleBackColor = true;
             // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.txtDonViTinh_KHO);
+            this.groupBox9.Controls.Add(this.cboLoaiHang_KHO);
+            this.groupBox9.Controls.Add(this.label34);
+            this.groupBox9.Controls.Add(this.label36);
+            this.groupBox9.Controls.Add(this.label38);
+            this.groupBox9.Controls.Add(this.txtGiaBan_KHO);
+            this.groupBox9.Controls.Add(this.txtGiaMua_KHO);
+            this.groupBox9.Controls.Add(this.label40);
+            this.groupBox9.Controls.Add(this.txtSoLuong_KHO);
+            this.groupBox9.Controls.Add(this.txtTenHang_KHO);
+            this.groupBox9.Controls.Add(this.label35);
+            this.groupBox9.Controls.Add(this.txtMaHang_KHO);
+            this.groupBox9.Controls.Add(this.label37);
+            this.groupBox9.Controls.Add(this.cboNhaCungCap_KHO);
+            this.groupBox9.Controls.Add(this.label41);
+            this.groupBox9.Controls.Add(this.label39);
+            resources.ApplyResources(this.groupBox9, "groupBox9");
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.TabStop = false;
+            // 
+            // txtDonViTinh_KHO
+            // 
+            resources.ApplyResources(this.txtDonViTinh_KHO, "txtDonViTinh_KHO");
+            this.txtDonViTinh_KHO.Name = "txtDonViTinh_KHO";
+            this.txtDonViTinh_KHO.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            // 
+            // cboLoaiHang_KHO
+            // 
+            this.cboLoaiHang_KHO.FormattingEnabled = true;
+            resources.ApplyResources(this.cboLoaiHang_KHO, "cboLoaiHang_KHO");
+            this.cboLoaiHang_KHO.Name = "cboLoaiHang_KHO";
+            // 
+            // label34
+            // 
+            resources.ApplyResources(this.label34, "label34");
+            this.label34.Name = "label34";
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.Name = "label36";
+            this.label36.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.Name = "label38";
+            this.label38.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // txtGiaBan_KHO
+            // 
+            resources.ApplyResources(this.txtGiaBan_KHO, "txtGiaBan_KHO");
+            this.txtGiaBan_KHO.Name = "txtGiaBan_KHO";
+            this.txtGiaBan_KHO.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            // 
+            // txtGiaMua_KHO
+            // 
+            resources.ApplyResources(this.txtGiaMua_KHO, "txtGiaMua_KHO");
+            this.txtGiaMua_KHO.Name = "txtGiaMua_KHO";
+            this.txtGiaMua_KHO.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.Name = "label40";
+            this.label40.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // txtSoLuong_KHO
+            // 
+            resources.ApplyResources(this.txtSoLuong_KHO, "txtSoLuong_KHO");
+            this.txtSoLuong_KHO.Name = "txtSoLuong_KHO";
+            this.txtSoLuong_KHO.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            // 
+            // txtTenHang_KHO
+            // 
+            resources.ApplyResources(this.txtTenHang_KHO, "txtTenHang_KHO");
+            this.txtTenHang_KHO.Name = "txtTenHang_KHO";
+            this.txtTenHang_KHO.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.Name = "label35";
+            // 
+            // txtMaHang_KHO
+            // 
+            resources.ApplyResources(this.txtMaHang_KHO, "txtMaHang_KHO");
+            this.txtMaHang_KHO.Name = "txtMaHang_KHO";
+            this.txtMaHang_KHO.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.Name = "label37";
+            this.label37.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // cboNhaCungCap_KHO
+            // 
+            this.cboNhaCungCap_KHO.FormattingEnabled = true;
+            resources.ApplyResources(this.cboNhaCungCap_KHO, "cboNhaCungCap_KHO");
+            this.cboNhaCungCap_KHO.Name = "cboNhaCungCap_KHO";
+            // 
+            // label41
+            // 
+            resources.ApplyResources(this.label41, "label41");
+            this.label41.Name = "label41";
+            this.label41.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // label39
+            // 
+            resources.ApplyResources(this.label39, "label39");
+            this.label39.Name = "label39";
+            this.label39.Click += new System.EventHandler(this.label36_Click);
+            // 
+            // btnRefresh_KHO
+            // 
+            resources.ApplyResources(this.btnRefresh_KHO, "btnRefresh_KHO");
+            this.btnRefresh_KHO.Name = "btnRefresh_KHO";
+            this.btnRefresh_KHO.UseVisualStyleBackColor = true;
+            // 
+            // btnCapNhatHinhAnh_KHO
+            // 
+            resources.ApplyResources(this.btnCapNhatHinhAnh_KHO, "btnCapNhatHinhAnh_KHO");
+            this.btnCapNhatHinhAnh_KHO.Name = "btnCapNhatHinhAnh_KHO";
+            this.btnCapNhatHinhAnh_KHO.UseVisualStyleBackColor = true;
+            // 
+            // btnCapNhatThongTin_KHO
+            // 
+            resources.ApplyResources(this.btnCapNhatThongTin_KHO, "btnCapNhatThongTin_KHO");
+            this.btnCapNhatThongTin_KHO.Name = "btnCapNhatThongTin_KHO";
+            this.btnCapNhatThongTin_KHO.UseVisualStyleBackColor = true;
+            // 
+            // dgvLuoiDL_KHO
+            // 
+            this.dgvLuoiDL_KHO.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvLuoiDL_KHO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvLuoiDL_KHO, "dgvLuoiDL_KHO");
+            this.dgvLuoiDL_KHO.Name = "dgvLuoiDL_KHO";
+            // 
             // tpNhanSu
             // 
-            this.tpNhanSu.Controls.Add(this.pictureBox1);
+            this.tpNhanSu.Controls.Add(this.picAnhNV_NV);
             this.tpNhanSu.Controls.Add(this.txtNgaySinh_NV);
             this.tpNhanSu.Controls.Add(this.txtGioiTinh_NV);
             this.tpNhanSu.Controls.Add(this.txtChucVu_NV);
@@ -538,11 +679,11 @@
             this.tpNhanSu.Name = "tpNhanSu";
             this.tpNhanSu.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // picAnhNV_NV
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.picAnhNV_NV, "picAnhNV_NV");
+            this.picAnhNV_NV.Name = "picAnhNV_NV";
+            this.picAnhNV_NV.TabStop = false;
             // 
             // txtNgaySinh_NV
             // 
@@ -677,12 +818,109 @@
             // tpKhachHang
             // 
             this.tpKhachHang.Controls.Add(this.groupBox8);
-            this.tpKhachHang.Controls.Add(this.dataGridView1);
+            this.tpKhachHang.Controls.Add(this.dgvLuoiDL_KH);
             this.tpKhachHang.Controls.Add(this.btnThemKhachHang_KH);
-            this.tpKhachHang.Controls.Add(this.button4);
+            this.tpKhachHang.Controls.Add(this.btnXoaKhachHang_KH);
             resources.ApplyResources(this.tpKhachHang, "tpKhachHang");
             this.tpKhachHang.Name = "tpKhachHang";
             this.tpKhachHang.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.txtDiaChi_KH);
+            this.groupBox8.Controls.Add(this.label26);
+            this.groupBox8.Controls.Add(this.txtNgaySinh_KH);
+            this.groupBox8.Controls.Add(this.label25);
+            this.groupBox8.Controls.Add(this.txtGioiTinh_KH);
+            this.groupBox8.Controls.Add(this.label24);
+            this.groupBox8.Controls.Add(this.txtDienThoai_KH);
+            this.groupBox8.Controls.Add(this.txtMaKhachHang_KH);
+            this.groupBox8.Controls.Add(this.label20);
+            this.groupBox8.Controls.Add(this.txtTenKhachHang_KH);
+            this.groupBox8.Controls.Add(this.label21);
+            this.groupBox8.Controls.Add(this.label23);
+            resources.ApplyResources(this.groupBox8, "groupBox8");
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.TabStop = false;
+            // 
+            // txtDiaChi_KH
+            // 
+            resources.ApplyResources(this.txtDiaChi_KH, "txtDiaChi_KH");
+            this.txtDiaChi_KH.Name = "txtDiaChi_KH";
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.Name = "label26";
+            // 
+            // txtNgaySinh_KH
+            // 
+            resources.ApplyResources(this.txtNgaySinh_KH, "txtNgaySinh_KH");
+            this.txtNgaySinh_KH.Name = "txtNgaySinh_KH";
+            // 
+            // label25
+            // 
+            resources.ApplyResources(this.label25, "label25");
+            this.label25.Name = "label25";
+            // 
+            // txtGioiTinh_KH
+            // 
+            resources.ApplyResources(this.txtGioiTinh_KH, "txtGioiTinh_KH");
+            this.txtGioiTinh_KH.Name = "txtGioiTinh_KH";
+            // 
+            // label24
+            // 
+            resources.ApplyResources(this.label24, "label24");
+            this.label24.Name = "label24";
+            // 
+            // txtDienThoai_KH
+            // 
+            resources.ApplyResources(this.txtDienThoai_KH, "txtDienThoai_KH");
+            this.txtDienThoai_KH.Name = "txtDienThoai_KH";
+            // 
+            // txtMaKhachHang_KH
+            // 
+            resources.ApplyResources(this.txtMaKhachHang_KH, "txtMaKhachHang_KH");
+            this.txtMaKhachHang_KH.Name = "txtMaKhachHang_KH";
+            // 
+            // label20
+            // 
+            resources.ApplyResources(this.label20, "label20");
+            this.label20.Name = "label20";
+            // 
+            // txtTenKhachHang_KH
+            // 
+            resources.ApplyResources(this.txtTenKhachHang_KH, "txtTenKhachHang_KH");
+            this.txtTenKhachHang_KH.Name = "txtTenKhachHang_KH";
+            // 
+            // label21
+            // 
+            resources.ApplyResources(this.label21, "label21");
+            this.label21.Name = "label21";
+            // 
+            // label23
+            // 
+            resources.ApplyResources(this.label23, "label23");
+            this.label23.Name = "label23";
+            // 
+            // dgvLuoiDL_KH
+            // 
+            this.dgvLuoiDL_KH.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvLuoiDL_KH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvLuoiDL_KH, "dgvLuoiDL_KH");
+            this.dgvLuoiDL_KH.Name = "dgvLuoiDL_KH";
+            // 
+            // btnThemKhachHang_KH
+            // 
+            resources.ApplyResources(this.btnThemKhachHang_KH, "btnThemKhachHang_KH");
+            this.btnThemKhachHang_KH.Name = "btnThemKhachHang_KH";
+            this.btnThemKhachHang_KH.UseVisualStyleBackColor = true;
+            // 
+            // btnXoaKhachHang_KH
+            // 
+            resources.ApplyResources(this.btnXoaKhachHang_KH, "btnXoaKhachHang_KH");
+            this.btnXoaKhachHang_KH.Name = "btnXoaKhachHang_KH";
+            this.btnXoaKhachHang_KH.UseVisualStyleBackColor = true;
             // 
             // tpBaoCao
             // 
@@ -702,7 +940,7 @@
             // 
             // tpTimKiem
             // 
-            this.tpTimKiem.Controls.Add(this.dataGridView2);
+            this.tpTimKiem.Controls.Add(this.dgvLuoiDL_TK);
             this.tpTimKiem.Controls.Add(this.groupBox7);
             this.tpTimKiem.Controls.Add(this.groupBox6);
             this.tpTimKiem.Controls.Add(this.groupBox5);
@@ -710,231 +948,43 @@
             this.tpTimKiem.Name = "tpTimKiem";
             this.tpTimKiem.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // dgvLuoiDL_TK
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
-            // textBox4
-            // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
-            // 
-            // textBox5
-            // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
-            // 
-            // textBox6
-            // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
-            // 
-            // label20
-            // 
-            resources.ApplyResources(this.label20, "label20");
-            this.label20.Name = "label20";
-            // 
-            // label21
-            // 
-            resources.ApplyResources(this.label21, "label21");
-            this.label21.Name = "label21";
-            // 
-            // label23
-            // 
-            resources.ApplyResources(this.label23, "label23");
-            this.label23.Name = "label23";
-            // 
-            // label24
-            // 
-            resources.ApplyResources(this.label24, "label24");
-            this.label24.Name = "label24";
-            // 
-            // label25
-            // 
-            resources.ApplyResources(this.label25, "label25");
-            this.label25.Name = "label25";
-            // 
-            // label26
-            // 
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.Name = "label26";
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // btnThemKhachHang_KH
-            // 
-            resources.ApplyResources(this.btnThemKhachHang_KH, "btnThemKhachHang_KH");
-            this.btnThemKhachHang_KH.Name = "btnThemKhachHang_KH";
-            this.btnThemKhachHang_KH.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
-            this.dataGridView1.Name = "dataGridView1";
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            // 
-            // textBox7
-            // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
-            // 
-            // textBox9
-            // 
-            resources.ApplyResources(this.textBox9, "textBox9");
-            this.textBox9.Name = "textBox9";
-            // 
-            // label28
-            // 
-            resources.ApplyResources(this.label28, "label28");
-            this.label28.Name = "label28";
-            // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.Name = "label19";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.button2);
-            this.groupBox5.Controls.Add(this.button1);
-            this.groupBox5.Controls.Add(this.textBox9);
-            this.groupBox5.Controls.Add(this.textBox3);
-            this.groupBox5.Controls.Add(this.label28);
-            this.groupBox5.Controls.Add(this.label22);
-            this.groupBox5.Controls.Add(this.label19);
-            this.groupBox5.Controls.Add(this.textBox7);
-            resources.ApplyResources(this.groupBox5, "groupBox5");
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.TabStop = false;
-            // 
-            // label22
-            // 
-            resources.ApplyResources(this.label22, "label22");
-            this.label22.Name = "label22";
-            this.label22.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.button3);
-            this.groupBox6.Controls.Add(this.button5);
-            this.groupBox6.Controls.Add(this.textBox10);
-            this.groupBox6.Controls.Add(this.textBox11);
-            this.groupBox6.Controls.Add(this.label27);
-            this.groupBox6.Controls.Add(this.label29);
-            this.groupBox6.Controls.Add(this.label30);
-            this.groupBox6.Controls.Add(this.textBox12);
-            resources.ApplyResources(this.groupBox6, "groupBox6");
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.TabStop = false;
-            // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // textBox10
-            // 
-            resources.ApplyResources(this.textBox10, "textBox10");
-            this.textBox10.Name = "textBox10";
-            // 
-            // textBox11
-            // 
-            resources.ApplyResources(this.textBox11, "textBox11");
-            this.textBox11.Name = "textBox11";
-            // 
-            // label27
-            // 
-            resources.ApplyResources(this.label27, "label27");
-            this.label27.Name = "label27";
-            // 
-            // label29
-            // 
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.Name = "label29";
-            this.label29.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // label30
-            // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.Name = "label30";
-            this.label30.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // textBox12
-            // 
-            resources.ApplyResources(this.textBox12, "textBox12");
-            this.textBox12.Name = "textBox12";
+            this.dgvLuoiDL_TK.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvLuoiDL_TK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dgvLuoiDL_TK, "dgvLuoiDL_TK");
+            this.dgvLuoiDL_TK.Name = "dgvLuoiDL_TK";
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.button6);
-            this.groupBox7.Controls.Add(this.button7);
-            this.groupBox7.Controls.Add(this.textBox13);
-            this.groupBox7.Controls.Add(this.textBox14);
+            this.groupBox7.Controls.Add(this.cboLoaiSanPham_TK);
+            this.groupBox7.Controls.Add(this.btnTimKiemDH_TK);
+            this.groupBox7.Controls.Add(this.btnRefreshDH_TK);
+            this.groupBox7.Controls.Add(this.txtNgayBan_TK);
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.Controls.Add(this.label32);
             this.groupBox7.Controls.Add(this.label33);
-            this.groupBox7.Controls.Add(this.textBox15);
+            this.groupBox7.Controls.Add(this.txtMaDonHang_TK);
             resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
-            // button6
+            // btnTimKiemDH_TK
             // 
-            resources.ApplyResources(this.button6, "button6");
-            this.button6.Name = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnTimKiemDH_TK, "btnTimKiemDH_TK");
+            this.btnTimKiemDH_TK.Name = "btnTimKiemDH_TK";
+            this.btnTimKiemDH_TK.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnRefreshDH_TK
             // 
-            resources.ApplyResources(this.button7, "button7");
-            this.button7.Name = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btnRefreshDH_TK, "btnRefreshDH_TK");
+            this.btnRefreshDH_TK.Name = "btnRefreshDH_TK";
+            this.btnRefreshDH_TK.UseVisualStyleBackColor = true;
             // 
-            // textBox13
+            // txtNgayBan_TK
             // 
-            resources.ApplyResources(this.textBox13, "textBox13");
-            this.textBox13.Name = "textBox13";
-            // 
-            // textBox14
-            // 
-            resources.ApplyResources(this.textBox14, "textBox14");
-            this.textBox14.Name = "textBox14";
+            resources.ApplyResources(this.txtNgayBan_TK, "txtNgayBan_TK");
+            this.txtNgayBan_TK.Name = "txtNgayBan_TK";
             // 
             // label31
             // 
@@ -953,181 +1003,132 @@
             this.label33.Name = "label33";
             this.label33.Click += new System.EventHandler(this.label19_Click);
             // 
-            // textBox15
+            // txtMaDonHang_TK
             // 
-            resources.ApplyResources(this.textBox15, "textBox15");
-            this.textBox15.Name = "textBox15";
+            resources.ApplyResources(this.txtMaDonHang_TK, "txtMaDonHang_TK");
+            this.txtMaDonHang_TK.Name = "txtMaDonHang_TK";
             // 
-            // dataGridView2
+            // groupBox6
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGridView2, "dataGridView2");
-            this.dataGridView2.Name = "dataGridView2";
+            this.groupBox6.Controls.Add(this.btnTimKiemNV_TK);
+            this.groupBox6.Controls.Add(this.btnRefreshNV_TK);
+            this.groupBox6.Controls.Add(this.txtSoDienThoaiNV_TK);
+            this.groupBox6.Controls.Add(this.txtTenNhanVien_TK);
+            this.groupBox6.Controls.Add(this.label27);
+            this.groupBox6.Controls.Add(this.label29);
+            this.groupBox6.Controls.Add(this.label30);
+            this.groupBox6.Controls.Add(this.txtMaNhanVien_TK);
+            resources.ApplyResources(this.groupBox6, "groupBox6");
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.TabStop = false;
             // 
-            // groupBox8
+            // btnTimKiemNV_TK
             // 
-            this.groupBox8.Controls.Add(this.textBox5);
-            this.groupBox8.Controls.Add(this.label26);
-            this.groupBox8.Controls.Add(this.textBox1);
-            this.groupBox8.Controls.Add(this.label25);
-            this.groupBox8.Controls.Add(this.textBox2);
-            this.groupBox8.Controls.Add(this.label24);
-            this.groupBox8.Controls.Add(this.textBox4);
-            this.groupBox8.Controls.Add(this.textBox8);
-            this.groupBox8.Controls.Add(this.label20);
-            this.groupBox8.Controls.Add(this.textBox6);
-            this.groupBox8.Controls.Add(this.label21);
-            this.groupBox8.Controls.Add(this.label23);
-            resources.ApplyResources(this.groupBox8, "groupBox8");
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.TabStop = false;
+            resources.ApplyResources(this.btnTimKiemNV_TK, "btnTimKiemNV_TK");
+            this.btnTimKiemNV_TK.Name = "btnTimKiemNV_TK";
+            this.btnTimKiemNV_TK.UseVisualStyleBackColor = true;
             // 
-            // textBox8
+            // btnRefreshNV_TK
             // 
-            resources.ApplyResources(this.textBox8, "textBox8");
-            this.textBox8.Name = "textBox8";
+            resources.ApplyResources(this.btnRefreshNV_TK, "btnRefreshNV_TK");
+            this.btnRefreshNV_TK.Name = "btnRefreshNV_TK";
+            this.btnRefreshNV_TK.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // txtSoDienThoaiNV_TK
             // 
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
+            resources.ApplyResources(this.txtSoDienThoaiNV_TK, "txtSoDienThoaiNV_TK");
+            this.txtSoDienThoaiNV_TK.Name = "txtSoDienThoaiNV_TK";
             // 
-            // label34
+            // txtTenNhanVien_TK
             // 
-            resources.ApplyResources(this.label34, "label34");
-            this.label34.Name = "label34";
+            resources.ApplyResources(this.txtTenNhanVien_TK, "txtTenNhanVien_TK");
+            this.txtTenNhanVien_TK.Name = "txtTenNhanVien_TK";
             // 
-            // label35
+            // label27
             // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.Name = "label35";
+            resources.ApplyResources(this.label27, "label27");
+            this.label27.Name = "label27";
             // 
-            // comboBox2
+            // label29
             // 
-            this.comboBox2.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox2, "comboBox2");
-            this.comboBox2.Name = "comboBox2";
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.Name = "label29";
+            this.label29.Click += new System.EventHandler(this.label19_Click);
             // 
-            // textBox16
+            // label30
             // 
-            resources.ApplyResources(this.textBox16, "textBox16");
-            this.textBox16.Name = "textBox16";
-            this.textBox16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.Name = "label30";
+            this.label30.Click += new System.EventHandler(this.label19_Click);
             // 
-            // textBox17
+            // txtMaNhanVien_TK
             // 
-            resources.ApplyResources(this.textBox17, "textBox17");
-            this.textBox17.Name = "textBox17";
-            this.textBox17.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            resources.ApplyResources(this.txtMaNhanVien_TK, "txtMaNhanVien_TK");
+            this.txtMaNhanVien_TK.Name = "txtMaNhanVien_TK";
             // 
-            // label36
+            // groupBox5
             // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.Name = "label36";
-            this.label36.Click += new System.EventHandler(this.label36_Click);
+            this.groupBox5.Controls.Add(this.btnTimKiemKH_TK);
+            this.groupBox5.Controls.Add(this.btnRefreshKH_TK);
+            this.groupBox5.Controls.Add(this.txtSoDienThoaiKH_TK);
+            this.groupBox5.Controls.Add(this.txtTenKhachHang_TK);
+            this.groupBox5.Controls.Add(this.label28);
+            this.groupBox5.Controls.Add(this.label22);
+            this.groupBox5.Controls.Add(this.label19);
+            this.groupBox5.Controls.Add(this.txtMaKhachHang_TK);
+            resources.ApplyResources(this.groupBox5, "groupBox5");
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.TabStop = false;
             // 
-            // label37
+            // btnTimKiemKH_TK
             // 
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.Name = "label37";
-            this.label37.Click += new System.EventHandler(this.label36_Click);
+            resources.ApplyResources(this.btnTimKiemKH_TK, "btnTimKiemKH_TK");
+            this.btnTimKiemKH_TK.Name = "btnTimKiemKH_TK";
+            this.btnTimKiemKH_TK.UseVisualStyleBackColor = true;
             // 
-            // label38
+            // btnRefreshKH_TK
             // 
-            resources.ApplyResources(this.label38, "label38");
-            this.label38.Name = "label38";
-            this.label38.Click += new System.EventHandler(this.label36_Click);
+            resources.ApplyResources(this.btnRefreshKH_TK, "btnRefreshKH_TK");
+            this.btnRefreshKH_TK.Name = "btnRefreshKH_TK";
+            this.btnRefreshKH_TK.UseVisualStyleBackColor = true;
             // 
-            // textBox18
+            // txtSoDienThoaiKH_TK
             // 
-            resources.ApplyResources(this.textBox18, "textBox18");
-            this.textBox18.Name = "textBox18";
-            this.textBox18.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            resources.ApplyResources(this.txtSoDienThoaiKH_TK, "txtSoDienThoaiKH_TK");
+            this.txtSoDienThoaiKH_TK.Name = "txtSoDienThoaiKH_TK";
             // 
-            // label39
+            // txtTenKhachHang_TK
             // 
-            resources.ApplyResources(this.label39, "label39");
-            this.label39.Name = "label39";
-            this.label39.Click += new System.EventHandler(this.label36_Click);
+            resources.ApplyResources(this.txtTenKhachHang_TK, "txtTenKhachHang_TK");
+            this.txtTenKhachHang_TK.Name = "txtTenKhachHang_TK";
             // 
-            // textBox19
+            // label28
             // 
-            resources.ApplyResources(this.textBox19, "textBox19");
-            this.textBox19.Name = "textBox19";
-            this.textBox19.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.Name = "label28";
             // 
-            // label40
+            // label22
             // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.Name = "label40";
-            this.label40.Click += new System.EventHandler(this.label36_Click);
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.Name = "label22";
+            this.label22.Click += new System.EventHandler(this.label19_Click);
             // 
-            // textBox20
+            // label19
             // 
-            resources.ApplyResources(this.textBox20, "textBox20");
-            this.textBox20.Name = "textBox20";
-            this.textBox20.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.Name = "label19";
+            this.label19.Click += new System.EventHandler(this.label19_Click);
             // 
-            // label41
+            // txtMaKhachHang_TK
             // 
-            resources.ApplyResources(this.label41, "label41");
-            this.label41.Name = "label41";
-            this.label41.Click += new System.EventHandler(this.label36_Click);
+            resources.ApplyResources(this.txtMaKhachHang_TK, "txtMaKhachHang_TK");
+            this.txtMaKhachHang_TK.Name = "txtMaKhachHang_TK";
             // 
-            // textBox21
+            // cboLoaiSanPham_TK
             // 
-            resources.ApplyResources(this.textBox21, "textBox21");
-            this.textBox21.Name = "textBox21";
-            this.textBox21.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            resources.ApplyResources(this.dataGridView3, "dataGridView3");
-            this.dataGridView3.Name = "dataGridView3";
-            // 
-            // button8
-            // 
-            resources.ApplyResources(this.button8, "button8");
-            this.button8.Name = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            resources.ApplyResources(this.button9, "button9");
-            this.button9.Name = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            resources.ApplyResources(this.button10, "button10");
-            this.button10.Name = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.textBox20);
-            this.groupBox9.Controls.Add(this.comboBox1);
-            this.groupBox9.Controls.Add(this.label34);
-            this.groupBox9.Controls.Add(this.label36);
-            this.groupBox9.Controls.Add(this.label38);
-            this.groupBox9.Controls.Add(this.textBox21);
-            this.groupBox9.Controls.Add(this.textBox19);
-            this.groupBox9.Controls.Add(this.label40);
-            this.groupBox9.Controls.Add(this.textBox17);
-            this.groupBox9.Controls.Add(this.textBox16);
-            this.groupBox9.Controls.Add(this.label35);
-            this.groupBox9.Controls.Add(this.textBox18);
-            this.groupBox9.Controls.Add(this.label37);
-            this.groupBox9.Controls.Add(this.comboBox2);
-            this.groupBox9.Controls.Add(this.label41);
-            this.groupBox9.Controls.Add(this.label39);
-            resources.ApplyResources(this.groupBox9, "groupBox9");
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.TabStop = false;
+            this.cboLoaiSanPham_TK.FormattingEnabled = true;
+            resources.ApplyResources(this.cboLoaiSanPham_TK, "cboLoaiSanPham_TK");
+            this.cboLoaiSanPham_TK.Name = "cboLoaiSanPham_TK";
             // 
             // frmHeThong
             // 
@@ -1149,27 +1150,27 @@
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_BH)).EndInit();
             this.tpKho.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_KHO)).EndInit();
             this.tpNhanSu.ResumeLayout(false);
             this.tpNhanSu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAnhNV_NV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_NS)).EndInit();
             this.tpKhachHang.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_KH)).EndInit();
             this.tpBaoCao.ResumeLayout(false);
             this.tpBaoCao.PerformLayout();
             this.tpTimKiem.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLuoiDL_TK)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1245,76 +1246,76 @@
         private System.Windows.Forms.Button btnThemNhanVien_NV;
         private System.Windows.Forms.DataGridView dgvLuoiDL_NS;
         private System.Windows.Forms.Button btnCapNhatHinhAnh_NV;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picAnhNV_NV;
         private System.Windows.Forms.TextBox txtDuongDanAnh_NV;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button btnXacNhan_NV;
         private System.Windows.Forms.Button btnChonTep_NV;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.DataGridView dgvLuoiDL_KH;
+        private System.Windows.Forms.TextBox txtNgaySinh_KH;
+        private System.Windows.Forms.TextBox txtGioiTinh_KH;
+        private System.Windows.Forms.TextBox txtDienThoai_KH;
+        private System.Windows.Forms.TextBox txtDiaChi_KH;
+        private System.Windows.Forms.TextBox txtTenKhachHang_KH;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnXoaKhachHang_KH;
         private System.Windows.Forms.Button btnThemKhachHang_KH;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtMaKhachHang_TK;
+        private System.Windows.Forms.TextBox txtTenKhachHang_TK;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtSoDienThoaiKH_TK;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Button btnTimKiemDH_TK;
+        private System.Windows.Forms.Button btnRefreshDH_TK;
+        private System.Windows.Forms.TextBox txtNgayBan_TK;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtMaDonHang_TK;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Button btnTimKiemNV_TK;
+        private System.Windows.Forms.Button btnRefreshNV_TK;
+        private System.Windows.Forms.TextBox txtSoDienThoaiNV_TK;
+        private System.Windows.Forms.TextBox txtTenNhanVien_TK;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtMaNhanVien_TK;
+        private System.Windows.Forms.Button btnTimKiemKH_TK;
+        private System.Windows.Forms.Button btnRefreshKH_TK;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvLuoiDL_TK;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtMaKhachHang_KH;
+        private System.Windows.Forms.TextBox txtTenHang_KHO;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.ComboBox cboNhaCungCap_KHO;
+        private System.Windows.Forms.ComboBox cboLoaiHang_KHO;
+        private System.Windows.Forms.TextBox txtSoLuong_KHO;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtGiaMua_KHO;
+        private System.Windows.Forms.TextBox txtDonViTinh_KHO;
+        private System.Windows.Forms.TextBox txtMaHang_KHO;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox txtGiaBan_KHO;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button btnRefresh_KHO;
+        private System.Windows.Forms.Button btnCapNhatHinhAnh_KHO;
+        private System.Windows.Forms.Button btnCapNhatThongTin_KHO;
+        private System.Windows.Forms.DataGridView dgvLuoiDL_KHO;
+        private System.Windows.Forms.ComboBox cboLoaiSanPham_TK;
     }
 }
 

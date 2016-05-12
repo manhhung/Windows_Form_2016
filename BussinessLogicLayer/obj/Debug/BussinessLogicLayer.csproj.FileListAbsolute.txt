@@ -1,0 +1,7 @@
+E:\GITHUB\Windows_Form_2016\BussinessLogicLayer\bin\Debug\BussinessLogicLayer.dll
+E:\GITHUB\Windows_Form_2016\BussinessLogicLayer\bin\Debug\BussinessLogicLayer.pdb
+E:\GITHUB\Windows_Form_2016\BussinessLogicLayer\bin\Debug\DataAccessLayer.dll
+E:\GITHUB\Windows_Form_2016\BussinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+E:\GITHUB\Windows_Form_2016\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.csprojResolveAssemblyReference.cache
+E:\GITHUB\Windows_Form_2016\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.dll
+E:\GITHUB\Windows_Form_2016\BussinessLogicLayer\obj\Debug\BussinessLogicLayer.pdb
