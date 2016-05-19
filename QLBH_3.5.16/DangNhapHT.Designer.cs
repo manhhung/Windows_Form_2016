@@ -43,7 +43,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(53, 127);
+            this.label2.Location = new System.Drawing.Point(54, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 19);
             this.label2.TabIndex = 1;
@@ -53,7 +53,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(53, 174);
+            this.label3.Location = new System.Drawing.Point(54, 157);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 19);
             this.label3.TabIndex = 1;
@@ -62,7 +62,7 @@
             // txtTaiKhoan_HT
             // 
             this.txtTaiKhoan_HT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaiKhoan_HT.Location = new System.Drawing.Point(168, 126);
+            this.txtTaiKhoan_HT.Location = new System.Drawing.Point(169, 109);
             this.txtTaiKhoan_HT.Name = "txtTaiKhoan_HT";
             this.txtTaiKhoan_HT.Size = new System.Drawing.Size(204, 20);
             this.txtTaiKhoan_HT.TabIndex = 0;
@@ -70,7 +70,7 @@
             // txtMatKhau_HT
             // 
             this.txtMatKhau_HT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau_HT.Location = new System.Drawing.Point(168, 173);
+            this.txtMatKhau_HT.Location = new System.Drawing.Point(169, 156);
             this.txtMatKhau_HT.Name = "txtMatKhau_HT";
             this.txtMatKhau_HT.PasswordChar = '*';
             this.txtMatKhau_HT.Size = new System.Drawing.Size(204, 20);
@@ -79,7 +79,7 @@
             // btnDangNhap_HT
             // 
             this.btnDangNhap_HT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap_HT.Location = new System.Drawing.Point(93, 230);
+            this.btnDangNhap_HT.Location = new System.Drawing.Point(87, 205);
             this.btnDangNhap_HT.Name = "btnDangNhap_HT";
             this.btnDangNhap_HT.Size = new System.Drawing.Size(105, 23);
             this.btnDangNhap_HT.TabIndex = 2;
@@ -90,7 +90,7 @@
             // btnThoat_HT
             // 
             this.btnThoat_HT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat_HT.Location = new System.Drawing.Point(244, 230);
+            this.btnThoat_HT.Location = new System.Drawing.Point(249, 205);
             this.btnThoat_HT.Name = "btnThoat_HT";
             this.btnThoat_HT.Size = new System.Drawing.Size(105, 23);
             this.btnThoat_HT.TabIndex = 3;
@@ -100,10 +100,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Image = global::QLBH_3._5._16.Properties.Resources.e1b81d3f5c5f;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(413, 91);
+            this.pictureBox1.Size = new System.Drawing.Size(438, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;

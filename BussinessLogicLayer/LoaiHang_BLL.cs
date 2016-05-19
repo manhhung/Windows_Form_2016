@@ -14,28 +14,21 @@ namespace BussinessLogicLayer
         //phương thức này gọi phương thức LH_select() ở lớp LoaiHang_DAL (tầng DAL)
         public DataTable LOAIHANG_Select()
         {
-            return LHdal.LH_select();
+            return LHdal.LoaiHang_select();
         }
 
         //phương thức này gọi phương thức LH_insert() ở lớp LoaiHang_DAL (tầng DAL)
-        public int LOAIHANG_insert(string MaLoaiHang, string TenLoaiHang, string MoTa)
-        {
-            return LHdal.LH_insert(MaLoaiHang, TenLoaiHang, MoTa);
-        }
-
-
-
-        //phương thức này gọi phương thức LH_update() ở lớp LoaiHang_DAL (tầng DAL)
+        public int LOAIHANG_Insert(string MaLoaiHang, string TenLoaiHang, string MoTa)
+    {
+        return LHdal.LoaiHang_Insert(MaLoaiHang, TenLoaiHang, MoTa);
+    }
         public int LOAIHANG_Update(string MaLoaiHang, string TenLoaiHang, string MoTa)
         {
-            return LHdal.LH_update(MaLoaiHang, TenLoaiHang, MoTa);
+            return LHdal.LoaiHang_update(MaLoaiHang, TenLoaiHang, MoTa);
         }
 
-        //phương thức này gọi phương thức LH_delete() ở lớp LoaiHang_DAL (tầng DAL)
-        public int LOAIHANG_Delete(string MaLoaiHang)
-        {
-            return LHdal.LH_delete(MaLoaiHang);
-        }
 
+
+ 
     }
 }

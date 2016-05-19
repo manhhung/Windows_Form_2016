@@ -30,6 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHeThong));
             this.tpQLBH = new System.Windows.Forms.TabControl();
+            this.tpHeThong = new System.Windows.Forms.TabPage();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
             this.tpLoaiHang = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtMoTa_LH = new System.Windows.Forms.TextBox();
@@ -142,6 +158,7 @@
             this.tpTimKiem = new System.Windows.Forms.TabPage();
             this.dgvLuoiDL_TK = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cboLoaiSanPham_TK = new System.Windows.Forms.ComboBox();
             this.btnTimKiemDH_TK = new System.Windows.Forms.Button();
             this.btnRefreshDH_TK = new System.Windows.Forms.Button();
             this.txtNgayBan_TK = new System.Windows.Forms.TextBox();
@@ -167,25 +184,15 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.txtMaKhachHang_TK = new System.Windows.Forms.TextBox();
-            this.cboLoaiSanPham_TK = new System.Windows.Forms.ComboBox();
-            this.tpHeThong = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label44 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tpQLBH.SuspendLayout();
+            this.tpHeThong.SuspendLayout();
+            this.groupBox13.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox10.SuspendLayout();
             this.tpLoaiHang.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -209,12 +216,8 @@
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.tpHeThong.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox10.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tpQLBH
@@ -230,6 +233,113 @@
             resources.ApplyResources(this.tpQLBH, "tpQLBH");
             this.tpQLBH.Name = "tpQLBH";
             this.tpQLBH.SelectedIndex = 0;
+            // 
+            // tpHeThong
+            // 
+            this.tpHeThong.Controls.Add(this.groupBox13);
+            this.tpHeThong.Controls.Add(this.groupBox12);
+            this.tpHeThong.Controls.Add(this.groupBox11);
+            this.tpHeThong.Controls.Add(this.groupBox10);
+            resources.ApplyResources(this.tpHeThong, "tpHeThong");
+            this.tpHeThong.Name = "tpHeThong";
+            this.tpHeThong.UseVisualStyleBackColor = true;
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.dataGridView1);
+            resources.ApplyResources(this.groupBox13, "groupBox13");
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.TabStop = false;
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.button4);
+            this.groupBox12.Controls.Add(this.button1);
+            this.groupBox12.Controls.Add(this.button2);
+            this.groupBox12.Controls.Add(this.button3);
+            resources.ApplyResources(this.groupBox12, "groupBox12");
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.TabStop = false;
+            // 
+            // button4
+            // 
+            resources.ApplyResources(this.button4, "button4");
+            this.button4.Name = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.pictureBox1);
+            resources.ApplyResources(this.groupBox11, "groupBox11");
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.textBox3);
+            this.groupBox10.Controls.Add(this.textBox1);
+            this.groupBox10.Controls.Add(this.textBox2);
+            this.groupBox10.Controls.Add(this.label42);
+            this.groupBox10.Controls.Add(this.label44);
+            this.groupBox10.Controls.Add(this.label45);
+            resources.ApplyResources(this.groupBox10, "groupBox10");
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.TabStop = false;
+            // 
+            // textBox3
+            // 
+            resources.ApplyResources(this.textBox3, "textBox3");
+            this.textBox3.Name = "textBox3";
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(this.textBox2, "textBox2");
+            this.textBox2.Name = "textBox2";
+            // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // label44
+            // 
+            resources.ApplyResources(this.label44, "label44");
+            this.label44.Name = "label44";
+            // 
+            // label45
+            // 
+            resources.ApplyResources(this.label45, "label45");
+            this.label45.Name = "label45";
             // 
             // tpLoaiHang
             // 
@@ -993,6 +1103,12 @@
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
+            // cboLoaiSanPham_TK
+            // 
+            this.cboLoaiSanPham_TK.FormattingEnabled = true;
+            resources.ApplyResources(this.cboLoaiSanPham_TK, "cboLoaiSanPham_TK");
+            this.cboLoaiSanPham_TK.Name = "cboLoaiSanPham_TK";
+            // 
             // btnTimKiemDH_TK
             // 
             resources.ApplyResources(this.btnTimKiemDH_TK, "btnTimKiemDH_TK");
@@ -1148,124 +1264,18 @@
             resources.ApplyResources(this.txtMaKhachHang_TK, "txtMaKhachHang_TK");
             this.txtMaKhachHang_TK.Name = "txtMaKhachHang_TK";
             // 
-            // cboLoaiSanPham_TK
-            // 
-            this.cboLoaiSanPham_TK.FormattingEnabled = true;
-            resources.ApplyResources(this.cboLoaiSanPham_TK, "cboLoaiSanPham_TK");
-            this.cboLoaiSanPham_TK.Name = "cboLoaiSanPham_TK";
-            // 
-            // tpHeThong
-            // 
-            this.tpHeThong.Controls.Add(this.groupBox13);
-            this.tpHeThong.Controls.Add(this.groupBox12);
-            this.tpHeThong.Controls.Add(this.groupBox11);
-            this.tpHeThong.Controls.Add(this.groupBox10);
-            resources.ApplyResources(this.tpHeThong, "tpHeThong");
-            this.tpHeThong.Name = "tpHeThong";
-            this.tpHeThong.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox2
-            // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
-            // 
-            // label44
-            // 
-            resources.ApplyResources(this.label44, "label44");
-            this.label44.Name = "label44";
-            // 
-            // textBox3
-            // 
-            resources.ApplyResources(this.textBox3, "textBox3");
-            this.textBox3.Name = "textBox3";
-            // 
-            // label45
-            // 
-            resources.ApplyResources(this.label45, "label45");
-            this.label45.Name = "label45";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.textBox3);
-            this.groupBox10.Controls.Add(this.textBox1);
-            this.groupBox10.Controls.Add(this.textBox2);
-            this.groupBox10.Controls.Add(this.label42);
-            this.groupBox10.Controls.Add(this.label44);
-            this.groupBox10.Controls.Add(this.label45);
-            resources.ApplyResources(this.groupBox10, "groupBox10");
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.TabStop = false;
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.pictureBox1);
-            resources.ApplyResources(this.groupBox11, "groupBox11");
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.TabStop = false;
-            // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.button4);
-            this.groupBox12.Controls.Add(this.button1);
-            this.groupBox12.Controls.Add(this.button2);
-            this.groupBox12.Controls.Add(this.button3);
-            resources.ApplyResources(this.groupBox12, "groupBox12");
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.TabStop = false;
-            // 
-            // groupBox13
-            // 
-            resources.ApplyResources(this.groupBox13, "groupBox13");
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.TabStop = false;
-            // 
             // pictureBox2
             // 
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Image = global::QLBH_3._5._16.Properties.Resources.e1b81d3f5c5f1;
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.Name = "dataGridView1";
             // 
             // frmHeThong
             // 
@@ -1276,6 +1286,13 @@
             this.Name = "frmHeThong";
             this.Load += new System.EventHandler(this.frmHeThong_Load);
             this.tpQLBH.ResumeLayout(false);
+            this.tpHeThong.ResumeLayout(false);
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.tpLoaiHang.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -1309,13 +1326,8 @@
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.tpHeThong.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox12.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1478,6 +1490,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

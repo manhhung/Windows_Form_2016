@@ -14,6 +14,7 @@ namespace QLBH_3._5._16
 {
     public partial class frmHeThong : Form
     {
+        LoaiHang_BLL lhbll = new LoaiHang_BLL();
         public frmHeThong()
         {
             InitializeComponent();
@@ -41,22 +42,14 @@ namespace QLBH_3._5._16
 
         private void frmHeThong_Load(object sender, EventArgs e)
         {
-            cn = new SqlConnection(connection);// mở kết nối đến sql
-            sql = "select * from LOAIHANG";//tạo chuỗi kết nối
-            SqlCommand com = new SqlCommand(sql, cn);//khai báo một command để truy vấn dữ liệu
-            com.CommandType = CommandType.Text;// khao báo kiểu command
-            da = new SqlDataAdapter(com);//vận chuyển dữ liệu về
+            dgvLuoiDL_LH.DataSource = lhbll.LOAIHANG_Select();
 
-            DataTable dt = new DataTable();// tạo một kho ảo để lưu dữ liệu
-            da.Fill(dt);//đưa dữ liệu vào kho
+            //cboLoaiHang_BH.DataSource = dt;//đưa dữ liệu vào cboLoaiHang
+            //cboLoaiHang_BH.ValueMember = "MaLoaiHang";
+            //cboLoaiHang_BH.DisplayMember = "TenLoaiHang";
 
-            cboLoaiHang_BH.DataSource = dt;//đưa dữ liệu vào cboLoaiHang
-            cboLoaiHang_BH.ValueMember = "MaLoaiHang";
-            cboLoaiHang_BH.DisplayMember = "TenLoaiHang";
-
-            cboLoaiHang_BH.SelectedIndex = 0;
-            cn.Close();
-            cn.Dispose();
+            //cboLoaiHang_BH.SelectedIndex = 0;
+            
         }
 
         
@@ -78,28 +71,9 @@ namespace QLBH_3._5._16
 
         private void btnLuu_LH_Click(object sender, EventArgs e)
         {
-            if (txtMaLoaiHang_LH != null && txtTenLoaiHang_LH != null)
-            {
-                cn = new SqlConnection(connection);
-                sql = "INSERT into LOAIHANG values (N'" + txtMaLoaiHang_LH.Text.ToString() + "',N'" + txtTenLoaiHang_LH.Text.ToString()
-                    + "',N'" + txtMoTa_LH.Text.ToString() + "')";
-                SqlCommand cmd = new SqlCommand(sql, cn);
-                cn.Open();
-                cmd.ExecuteNonQuery();
-                cn.Close();
-                cn.Dispose();
-                // Hiện thị lên bảng dữ liệu
-                cn = new SqlConnection(connection);
-                sql = "select * from LOAIHANG";
-                da = new SqlDataAdapter(sql, cn);
-                DataTable dt1 = new DataTable();
-                da.Fill(dt1);
-                dgvLuoiDL_LH.DataSource = dt1;
-                cn.Close();
-                cn.Dispose();
-            }
-            else
-                MessageBox.Show("Cần nhập đầy đủ Mã loại hàng và Tên loại hàng", "Chú ý!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            lhbll.LOAIHANG_Insert(txtMaLoaiHang_LH.Text, txtTenLoaiHang_LH.Text, txtMoTa_LH.Text);
+            btnHienThi_LH_Click(sender, e);
 
         }
 
@@ -116,16 +90,8 @@ namespace QLBH_3._5._16
 
         private void btnCapNhat_LH_Click(object sender, EventArgs e)
         {
-            cn = new SqlConnection(connection);
-            sql = "UPDATE LOAIHANG set TenLoaiHang = N'" + txtTenLoaiHang_LH.Text.ToString() + "',MoTa = N'" + txtMoTa_LH.Text.ToString()
-                + "'where MaLoaiHang = N'" + MaLoaiHangCapNhat.ToString() + "'";
-            SqlCommand cmd = new SqlCommand(sql, cn);
-            cn.Open();
-            cmd.ExecuteNonQuery();
-            cn.Close();
-            cn.Dispose();
-            HienThiLoaiHang();
-            btnCapNhat_BH.Enabled = false;
+            lhbll.LOAIHANG_Update(txtMaLoaiHang_LH.Text, txtTenLoaiHang_LH.Text, txtMoTa_LH.Text);
+            btnHienThi_LH_Click(sender, e);
 
         }
 
@@ -396,7 +362,14 @@ namespace QLBH_3._5._16
         //    txtMoTa.Text = dgvLuoiDL_LH.Rows[e.RowIndex].Cells[2].Value.ToString();
             
         //}
+        private int myVar;
 
+        public int MyProperty
+        {
+            get { return myVar; }
+            set { myVar = value; }
+        }
+        
     }
 }
         #endregion
