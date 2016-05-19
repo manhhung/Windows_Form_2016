@@ -102,14 +102,8 @@ namespace QLBH_3._5._16
             {
                 try
                 {
-                    cn = new SqlConnection(connection);
-                    sql = "DELETE from LOAIHANG where MaLoaiHang=N'" + MaLoaiHangCapNhat.ToString() + "'";
-                    SqlCommand cmd = new SqlCommand(sql, cn);
-                    cn.Open();
-                    cmd.ExecuteNonQuery();
-                    cn.Close();
-                    cn.Dispose();
-                    HienThiLoaiHang();
+                    lhbll.LOAIHANG_Delete(txtMaLoaiHang_LH.Text);
+                    btnHienThi_LH_Click(sender, e);
 
                 }
                 catch

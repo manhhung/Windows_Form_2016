@@ -21,7 +21,7 @@ namespace DataAccessLayer
         }
 
      
-        public int LoaiHang_Insert(string MaLoaiHang, string TenLoaiHang, string MoTa)
+        public int LoaiHang_insert(string MaLoaiHang, string TenLoaiHang, string MoTa)
         {
 
             name = new string[3];
@@ -42,13 +42,13 @@ namespace DataAccessLayer
            return thaotac.SQL_Thuchien("LOAIHANG_Update", name, value, 3);
        }
        //phương thức này gọi phương thức SQL_Thuchien ở lớp ThaoTac_CoSoDuLieu để thực hiện delete
-       //public int LH_delete(string MaLoaiHang)
-       //{
-       //    name = new string[1];
-       //    value = new object[1];
-       //    name[0] = "@MaLoaiHang"; value[0] = MaLoaiHang;
-       //    return thaotac.SQL_Thuchien("LOAI_Delete", name, value, 1);
-       //}
+       public int LoaiHang_delete(string MaLoaiHang)
+       {
+           name = new string[1];
+           value = new object[1];
+           name[0] = "@MaLoaiHang"; value[0] = MaLoaiHang;
+           return thaotac.SQL_Thuchien("LOAIHANG_Delete", name, value, 1);
+       }
 
 
     }

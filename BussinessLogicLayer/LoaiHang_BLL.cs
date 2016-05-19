@@ -20,11 +20,16 @@ namespace BussinessLogicLayer
         //phương thức này gọi phương thức LH_insert() ở lớp LoaiHang_DAL (tầng DAL)
         public int LOAIHANG_Insert(string MaLoaiHang, string TenLoaiHang, string MoTa)
     {
-        return LHdal.LoaiHang_Insert(MaLoaiHang, TenLoaiHang, MoTa);
+        return LHdal.LoaiHang_insert(MaLoaiHang, TenLoaiHang, MoTa);
     }
         public int LOAIHANG_Update(string MaLoaiHang, string TenLoaiHang, string MoTa)
         {
             return LHdal.LoaiHang_update(MaLoaiHang, TenLoaiHang, MoTa);
+        }
+        
+        public int LOAIHANG_Delete(string MaLoaiHang)
+        {
+            return LHdal.LoaiHang_delete(MaLoaiHang);
         }
 
 
